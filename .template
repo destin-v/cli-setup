@@ -1,0 +1,15 @@
+
+# PATHS
+export HOMEBREW_PATH=/opt/homebrew/bin
+export UV_PATH=$HOME/.local/bin/env
+export PATH=$HOMEBREW_PATH:$UV_PATH:$PATH
+
+# Aliases
+alias cd="z"
+alias cdi="zi"
+alias vim="nvim"
+alias ls="eza --icons"
+
+# Evals
+eval "$(zoxide init zsh)"
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/custom.toml)"
