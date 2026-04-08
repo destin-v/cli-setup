@@ -29,17 +29,7 @@ Available recipes:
     install-all                           # Install everything!
     install_colima                        # Docker open-source backend.
     install_eza                           # Better ls.
-    install_fd                            # Better find.
-    install_fzf                           # Better fuzzy search.
-    install_homebrew                      # Install Homebrew.
-    install_neovim                        # Neovim.
-    install_oh-my-posh                    # Colorful CLI.
-    install_ripgrep                       # Better grep.
-    install_tmux                          # Tmux for all.
-    install_uv                            # Package Managers
-    install_zoxide                        # Better cd.
-    set_startup SHELL_PATH='$HOME/.zshrc' # Startup modifications.
-    test                                  # Test for CI/CD.
+    ...
 ```
 
 You can install all packages via:
