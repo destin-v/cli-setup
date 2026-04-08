@@ -5,6 +5,7 @@ export UV_PATH=$HOME/.local/bin/env
 export PATH=$HOMEBREW_PATH:$UV_PATH:$PATH
 
 # Aliases
+alias cat="bat"
 alias cd="z"
 alias cdi="zi"
 alias vim="nvim"
