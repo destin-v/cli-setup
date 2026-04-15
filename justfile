@@ -62,6 +62,10 @@ install_fd:
 install_fzf:
     brew install fzf
 
+# Install K9s
+install_k9s:
+    brew install derailed/k9s/k9s
+
 # LazyGit
 [group('cli')]
 install_lazygit:
@@ -170,6 +174,7 @@ install_cli_tools:
     just install_eza
     just install_fd
     just install_fzf
+    just install_k9s
     just install_lazygit
     just install_oh_my_posh
     just install_neovim
