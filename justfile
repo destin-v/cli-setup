@@ -114,14 +114,14 @@ install_zoxide:
 [macos]
 [group('shell')]
 set_startup SHELL_PATH='$HOME/.zshrc':
-    cat .template >> {{SHELL_PATH}}
+    cat template.sh >> {{SHELL_PATH}}
     echo 'Restart the terminal to see changes!'
 
 # Shell modifications.
 [linux]
 [group('shell')]
 set_startup SHELL_PATH='$HOME/.bashrc':
-    cat .template >> {{SHELL_PATH}}
+    cat template.sh >> {{SHELL_PATH}}
     echo 'Restart the terminal to see changes!'
 
 # ============================================

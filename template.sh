@@ -1,8 +1,9 @@
 
 # PATHS
-export HOMEBREW_PATH=/opt/homebrew/bin
-export UV_PATH=$HOME/.local/bin/env
-export PATH=$HOMEBREW_PATH:$UV_PATH:$PATH
+export LOCAL_PATH="/Users/$USER/.local/bin"
+export HOMEBREW_PATH="/opt/homebrew/bin"
+export UV_PATH="$HOME/.local/bin/env"
+export PATH="$LOCAL_PATH:$HOMEBREW_PATH:$UV_PATH:$PATH"
 
 # Aliases
 alias cat="bat"
