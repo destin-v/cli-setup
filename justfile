@@ -80,7 +80,12 @@ install_oh_my_posh:
 [group('cli')]
 install_neovim:
     brew install neovim
-    
+
+# NvChad
+[group('cli')]
+install_nvchad:
+    git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+
 # Better grep.
 [group('cli')]
 install_ripgrep:
@@ -89,7 +94,7 @@ install_ripgrep:
 # Better manuals.
 [group('cli')]
 install_tldr:
-    brew install tldr
+    brew install tlrc
 
 # Tmux for all.
 [group('cli')]
@@ -168,6 +173,7 @@ install_cli_tools:
     just install_lazygit
     just install_oh_my_posh
     just install_neovim
+    just install_nvchad
     just install_ripgrep
     just install_tldr
     just install_tmux
