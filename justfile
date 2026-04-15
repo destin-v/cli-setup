@@ -42,6 +42,11 @@ install_bat:
 install_bottom:
     brew install bottom
 
+# Manual alternative
+[group('cli')]
+install_cheat:
+    brew install cheat
+    
 # Disk storage info.
 [group('cli')]
 install_dust:
@@ -170,6 +175,7 @@ install_docker:
 install_cli_tools:
     just install_bat
     just install_bottom
+    just install_cheat
     just install_dust
     just install_eza
     just install_fd
