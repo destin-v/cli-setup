@@ -10,6 +10,10 @@ default:
 install_essentials:
     apt-get install -y build-essential curl git vim
 
+[macos]
+install_essentials:
+    echo "pass"
+
 # ============================================
 # Docker
 # ============================================
@@ -160,7 +164,7 @@ install_homebrew:
 [group('quickstart')]
 install_package_managers:
     just install_uv
-    just install cargo
+    just install_cargo
     just install_homebrew
 
 # Install Docker.
@@ -194,7 +198,7 @@ install_cli_tools:
 [group('quickstart')]
 install_all:
     just install_essentials
-    just install-package-managers.
+    just install_package_managers
     just install_cli_tools
     
     # Modify z shell.
